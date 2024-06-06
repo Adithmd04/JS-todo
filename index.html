@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>todo list</title>
+</head>
+<body>
+<main class="fullcontent">
+    <header class="heading">
+        <h1>todos</h1>
+    </header>
+
+    <div class="content">
+        <img class="selectall" src="/assets/select.png" alt="Select-All" style="display: none;">
+        <input id="display" placeholder="what needs to be done?">
+    </div>
+    <ul id="list-container"></ul>
+    <footer id="footer" style="display: none;">
+        <ul class="footer-list">
+            <li class="item-count">Item Count : </li>
+            <li>
+                <a data-filter="All" href="#" class="all-list tab">All</a>
+            </li>
+            <li>
+                <a data-filter="Active" href="#" class="active-list tab">Active</a>
+            </li>
+            <li>
+                <a data-filter="Completed" href="#" class="complete-list tab">Completed</a>
+            </li>
+        
+        <li class="clear-btn-container">
+            <button class="clear-btn">Clear Completed</button>
+        </li>
+    </ul>
+    </footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
